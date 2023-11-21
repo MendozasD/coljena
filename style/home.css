@@ -1,0 +1,45 @@
+:root {
+  --blue: #65b0e2;
+  --green: #96fcb1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  top: 120px;
+  border: dashed var(--blue) 10px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#main_text {
+  font-family: "Gluten", cursive;
+  height: 95%;
+  width: 45%;
+  align-self: center;
+}
+#main_img {
+  height: 95%;
+  width: 45%;
+  object-fit: cover;
+  border-radius: 0 30px 30px 0;
+  align-self: center;
+}
+
+.bg_glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

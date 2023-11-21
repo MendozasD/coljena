@@ -1,0 +1,36 @@
+#bg_motiv {
+  opacity: 0.6;
+  overflow: hidden;
+  display: flex;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.bg_item {
+  bottom: 0;
+  position: absolute;
+  width: 200px;
+}
+
+#bg_item_01 {
+  left: 0;
+}
+#bg_item_06 {
+  bottom: 50px;
+  left: -50px;
+  width: 150px;
+  rotate: 40grad;
+}
+#bg_item_03 {
+  right: -60px;
+}
+#bg_item_05 {
+  right: 100px;
+}
+#bg_item_04 {
+  right: 20px;
+}
