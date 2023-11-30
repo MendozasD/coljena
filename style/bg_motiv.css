@@ -1,8 +1,8 @@
 #bg_motiv {
-  opacity: 0.6;
+  z-index: -3;
+  background-color: var(--beige);
   overflow: hidden;
   display: flex;
-  z-index: -1;
   position: absolute;
   right: 0;
   left: 0;
@@ -14,23 +14,44 @@
   bottom: 0;
   position: absolute;
   width: 200px;
+  opacity: 0.7;
 }
 
-#bg_item_01 {
-  left: 0;
+#bg_item_rainbow {
+  right: 0;
 }
-#bg_item_06 {
-  bottom: 50px;
-  left: -50px;
-  width: 150px;
+#bg_item_lightball {
+  right: -100px;
+  bottom: 100px;
+  rotate: -60deg;
+}
+#bg_item_rule {
+  right: 20px;
+  rotate: 60grad;
+  bottom: 200px;
+}
+#bg_item_pencil {
+  right: 20px;
+  bottom: 20rem;
   rotate: 40grad;
 }
-#bg_item_03 {
-  right: -60px;
+
+.bubble {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(100px);
 }
-#bg_item_05 {
-  right: 100px;
+
+#bubble_left_bottom {
+  bottom: 0;
+  background-color: var(--blue);
+  transform: translateX(-50%) translateY(50%);
 }
-#bg_item_04 {
-  right: 20px;
+
+#bubble_right_top {
+  right: 0;
+  background-color: var(--green);
+  transform: translateX(50%) translateY(-50%);
 }

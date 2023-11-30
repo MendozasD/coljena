@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/bg_motiv.css" />
 
@@ -15,62 +15,59 @@
       rel="stylesheet"
     />
 
+    <!-- FONTSHARE -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=pramukh-rounded@800,900,201,200,901,801&f[]=boska@900,901,401,400&f[]=poppins@301,601,300,600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Animate.style -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <!-- Google Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Colegio Jesús de Nazareth</title>
   </head>
   <body>
-    <div id="navbar" class="bg_glass">
+    <nav id="navbar">
       <img id="logo" src="img/coljena_logo.png" alt="logo" />
-      <div id="navbar_menu">
-        <p>Inicio</p>
-        <p>Historia</p>
-        <p>Contacto</p>
+      <div id="dropdown_list" class="animate__animated">
+        <a class="nav_btn" href="#">INICIO</a>
+        <a class="nav_btn" href="#">HISTORIA</a>
+        <a class="nav_btn" href="#">INFORMACIÓN</a>
       </div>
-    </div>
-
-    <div id="container" class="bg_glass">
-      <div id="main_text">
-        <h1>Este es nuestro colegio</h1>
-        <p>
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
-        </p>
-      </div>
-      <img id="main_img" src="img/children.jpg" alt="children walking" />
-    </div>
-
-    <div id="bg_motiv">
+      <span id="dropdown_icon" class="material-symbols-outlined"> menu </span>
+    </nav>
+    <section id="bg_motiv">
+      <div id="bubble_right_top" class="bubble"></div>
+      <div id="bubble_left_bottom" class="bubble"></div>
       <img
         src="img/bg_assets/rainbow_coljena.png"
-        id="bg_item_01"
+        id="bg_item_rainbow"
         class="bg_item animate__animated animate__bounce"
       />
       <img
         src="img/bg_assets/light_coljena.png"
-        id="bg_item_03"
-        class="bg_item animate__animated animate__bounce"
-      />
-      <img
-        src="img/bg_assets/star_coljena.png"
-        id="bg_item_06"
+        id="bg_item_lightball"
         class="bg_item animate__animated animate__bounce"
       />
       <img
         src="img/bg_assets/rule_coljena.png"
-        id="bg_item_05"
+        id="bg_item_rule"
         class="bg_item animate__animated animate__bounce"
       />
       <img
         src="img/bg_assets/pencil_coljena.png"
-        id="bg_item_04"
+        id="bg_item_pencil"
         class="bg_item animate__animated animate__bounce"
       />
-    </div>
+      <div id="dropdown_bg_close" style="display: none"></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
