@@ -1,0 +1,21 @@
+:root {
+  --blue: #65b0e2;
+  --green: #adf7b6;
+  --beige: #fcf5c7;
+  --yellow: #ffee93;
+  --red: #ffbf9f;
+  --pramukh: "Pramukh Rounded", sans-serif;
+  --boska: "Boska", serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--pramukh);
+}

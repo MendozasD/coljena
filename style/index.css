@@ -1,61 +1,72 @@
-:root {
-  --blue: #65b0e2;
-  --green: #adf7b6;
-  --beige: #fcf5c7;
-  --yellow: #ffee93;
-  --red: #ffbf9f;
-  --gluten: "Gluten", cursive;
-  --lato: "Lato", sans-serif;
-  --pramukh: "Pramukh Rounded", sans-serif;
-  --boska: "Boska", serif;
-  --poppins: "Poppins", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  color: black;
-  text-decoration: none;
-}
-
-h1 {
-  font-family: var(--pramukh);
-}
-
-#index_container {
+#landing_container {
   position: absolute;
   display: flex;
-  z-index: -2;
-  justify-content: space-between;
-  left: 5%;
-  right: 5%;
-  bottom: 5%;
-  top: 4.5rem;
-  border: dashed var(--blue) 5px;
+  align-items: center;
+  top: 5rem;
+  bottom: 2rem;
+  right: 10rem;
+  left: 10rem;
+}
+
+#landing_text {
+  z-index: 5;
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  width: 50%;
+}
+
+#landing_text h1 {
+  white-space: nowrap;
+  width: fit-content;
+}
+
+#landing_text #bienvenidos {
+  z-index: 4;
+  position: relative;
+  color: var(--red);
+}
+
+#landing_imgs_box {
+  z-index: 4;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+}
+
+#landing_imgs_box img {
+  position: absolute;
+  width: 70%;
   border-radius: 30px;
-  padding: 10px;
 }
 
-#main_text {
-  font-family: var(--lato);
-  height: 95%;
-  width: 45%;
-  align-self: center;
+#landing_img_top {
+  top: 15%;
+  transform: rotate(15deg);
+}
+#landing_img_bottom {
+  bottom: 15%;
+  transform: rotate(-15deg);
+}
+#landing_imgs_box img {
+  opacity: 0.8;
+  box-shadow: 10px 10px 24px 1px rgba(0, 0, 0, 0.25);
 }
 
-#main_img {
-  height: 95%;
-  width: 45%;
-  object-fit: cover;
-  border-radius: 0 30px 30px 0;
-  align-self: center;
-}
-
-.bg_glass {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+/* MOBILE VERSION */
+@media (max-width: 900px) {
+  #landing_container {
+    right: 1rem;
+    left: 1rem;
+  }
+  #landing_text {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+  #landing_imgs_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
