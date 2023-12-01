@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/history.css" />
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/bg_motiv.css" />
@@ -33,14 +34,15 @@
     <nav id="navbar">
       <img id="logo" src="img/coljena_logo.png" alt="logo" />
       <div id="dropdown_list" class="animate__animated">
-        <a class="nav_btn" href="#">INICIO</a>
-        <a class="nav_btn" href="#">HISTORIA</a>
+        <a class="nav_btn" href="#landing_container">INICIO</a>
+        <a class="nav_btn" href="#history_container">HISTORIA</a>
         <a class="nav_btn" href="#">INFORMACIÓN</a>
       </div>
       <span id="dropdown_icon" class="material-symbols-outlined"> menu </span>
     </nav>
 
-    <section id="landing_container">
+    <!-- LANDING PAGE -->
+    <section id="landing_container" class="page_container">
       <section id="landing_text">
         <h1 id="bienvenidos">
           Bienvenidos
@@ -63,7 +65,7 @@
             autoplay
           ></dotlottie-player>
         </h1>
-        <h1>al portal del</h1>
+        <h1 id="portal_del">al portal del</h1>
         <h1>Colegio Jesús</h1>
         <h1>de Nazareth</h1>
       </section>
@@ -79,6 +81,11 @@
           alt=""
         />
       </section>
+    </section>
+
+    <!-- HISTORY PAGE -->
+    <section id="history_container" class="page_container">
+      <h1>Historia</h1>
     </section>
 
     <!-- DARK BG, CLOSING DROPDOWN -->
