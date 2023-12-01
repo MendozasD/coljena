@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/navbar.css" />
     <link rel="stylesheet" href="style/bg_motiv.css" />
-    <link rel="stylesheet" href="style/main.css" />
 
     <!-- FONTSHARE -->
     <link
@@ -20,11 +20,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- DOTTIE ANIMATION PLAYER, DON'T EDIT -->
-    <script
-      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-      type="module">
-    </script>
+    <!-- MATERIAL ICONS, FROM GOOGLE (DO NOT MODIFY) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <title>Colegio Jesús de Nazareth</title>
   </head>
@@ -42,22 +42,30 @@
 
     <section id="landing_container">
       <section id="landing_text">
-        <h1 id="bienvenidos">Bienvenidos
+        <h1 id="bienvenidos">
+          Bienvenidos
           <!-- LOTTIE ANIMATION -->
           <dotlottie-player
-              src="https://lottie.host/948e2220-0634-4da0-875c-318ae2c74967/uOnDE5IsKC.lottie"
-              background="transparent"
-              speed="1"
-              style="width: 120%; height: 100%; position: absolute; bottom: -30px; left: -10%"
-              direction="1" mode="bounce" loop autoplay
-            ></dotlottie-player>
+            src="https://lottie.host/948e2220-0634-4da0-875c-318ae2c74967/uOnDE5IsKC.lottie"
+            background="transparent"
+            speed="1"
+            style="
+              width: 125%;
+              height: 100%;
+              position: absolute;
+              bottom: -35px;
+              left: -10%;
+              z-index: -1;
+            "
+            direction="1"
+            mode="bounce"
+            loop
+            autoplay
+          ></dotlottie-player>
         </h1>
-
-
-          <h1>al portal del</h1>
-          <h1>Colegio Jesús</h1>
-          <h1>de Nazareth</h1>
-        </h1>
+        <h1>al portal del</h1>
+        <h1>Colegio Jesús</h1>
+        <h1>de Nazareth</h1>
       </section>
       <section id="landing_imgs_box">
         <img
@@ -104,5 +112,11 @@
 
     <!-- JS FILE -->
     <script src="script.js"></script>
+
+    <!-- DOTTIE ANIMATION PLAYER, DO NOT MODIFY -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </body>
 </html>
