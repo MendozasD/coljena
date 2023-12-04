@@ -21,3 +21,9 @@ dropdownBg.addEventListener("click", () => {
   navbarMenu.style.display = "none";
   dropdown_bg_close.style.display = "none";
 });
+
+const underlineObject = document.getElementById("underline_subtitle");
+const underlineObjectWidth = underlineObject.offsetWidth;
+const underlineAnimation = underlineObject.nextElementSibling;
+
+underlineAnimation.style.width = `${underlineObjectWidth}px`;

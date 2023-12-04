@@ -4,6 +4,7 @@
   --beige: #fcf5c7;
   --yellow: #ffee93;
   --red: #ffbf9f;
+  --gray: rgb(113, 113, 113);
   --pramukh: "Pramukh Rounded", sans-serif;
   --boska: "Boska", serif;
   --poppins: "Poppins", sans-serif;
@@ -19,6 +20,9 @@
 
 h1 {
   font-family: var(--pramukh);
+}
+p {
+  font-family: var(--poppins);
 }
 
 .page_container {
