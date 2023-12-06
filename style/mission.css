@@ -1,0 +1,31 @@
+#mission_container {
+  display: flex;
+  gap: 20px;
+}
+
+#mission_container .flex_box_mission {
+  flex: 1;
+  padding-top: 100px;
+}
+
+#mission_container p {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+.mission_section_title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--gray);
+}
+
+@media (max-width: 900px) {
+  #mission_container {
+    flex-direction: column;
+  }
+  #mission_container .flex_box_mission {
+    padding-top: 0;
+  }
+  #mission_title {
+    padding-top: 100px;
+  }
+}
