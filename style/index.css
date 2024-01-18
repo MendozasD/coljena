@@ -70,19 +70,19 @@
     left: 10%;
     background-size: cover;
     border-radius: 30px;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   #landing_text::before {
     content: "";
-    background-image: url("img/image_item_1.jpg");
+    background-image: url("/img/image_item_1.jpg");
     top: 5%;
     transform: rotate(10deg);
   }
 
   #landing_text::after {
     content: "";
-    background-image: url("img/image_item_2.jpg");
+    background-image: url("/img/image_item_2.jpg");
     bottom: 5%;
     transform: rotate(-10deg);
   }
