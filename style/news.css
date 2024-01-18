@@ -1,0 +1,25 @@
+#news_title {
+  padding-top: 100px;
+}
+
+#coming_soon {
+  width: 50%;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10% auto;
+  padding: 40px 0;
+  background-color: var(--green);
+  box-shadow: var(--red) 2px 2px 20px;
+}
+
+#coming_soon h2 {
+  font-family: var(--pramukh);
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  #coming_soon {
+    min-width: 100%;
+    margin: 30% auto;
+  }
+}

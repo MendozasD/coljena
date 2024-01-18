@@ -9,23 +9,30 @@
 }
 
 #mission_container p {
-  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-size: clamp(0.9rem, 1.4vw, 1rem);
+  text-align: justify;
 }
 
 .mission_section_title {
   text-align: center;
   font-size: 3.5rem;
   color: var(--gray);
+  text-decoration: underline 8px var(--green);
+  padding-bottom: 20px;
 }
 
 @media (max-width: 900px) {
   #mission_container {
     flex-direction: column;
+    text-align: justify;
   }
   #mission_container .flex_box_mission {
     padding-top: 0;
   }
   #mission_title {
-    padding-top: 100px;
+    padding-top: 4rem;
+  }
+  #vision_box {
+    padding-bottom: 1rem;
   }
 }
