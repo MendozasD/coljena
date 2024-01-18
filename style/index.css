@@ -68,21 +68,20 @@
     width: 300px;
     height: 200px;
     left: 10%;
-    background-size: cover;
     border-radius: 30px;
     opacity: 0.9;
   }
 
   #landing_text::before {
     content: "";
-    background-image: url("/img/image_item_1.jpg");
+    background: url("/img/image_item_1.jpg") center/cover no-repeat;
     top: 5%;
     transform: rotate(10deg);
   }
 
   #landing_text::after {
     content: "";
-    background-image: url("/img/image_item_2.jpg");
+    background: url("/img/image_item_2.jpg") center/cover no-repeat;
     bottom: 5%;
     transform: rotate(-10deg);
   }
