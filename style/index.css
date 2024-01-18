@@ -75,14 +75,14 @@
 
   #landing_text::before {
     content: "";
-    background-image: url(https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?q=80&w=2496&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url("/img/image_item_1.jpg");
     top: 5%;
     transform: rotate(10deg);
   }
 
   #landing_text::after {
     content: "";
-    background-image: url(https://images.unsplash.com/photo-1581726707445-75cbe4efc586?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url("/img/image_item_2.jpg");
     bottom: 5%;
     transform: rotate(-10deg);
   }
