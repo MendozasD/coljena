@@ -57,8 +57,11 @@
   padding: 20px 1rem 0 1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991.98px) {
   #history_content {
     padding: 20px 0;
+  }
+  #history_container aside {
+    margin: 0 0 5px 0;
   }
 }

@@ -31,6 +31,8 @@
 
 #dropdown_list a {
   padding: 0 10px;
+  text-transform: capitalize;
+  color: black;
 }
 
 #dropdown_list a::after {
@@ -58,10 +60,11 @@
     height: 50vh;
     width: 100%;
     background-color: var(--green);
+    padding-top: 4rem;
   }
   #dropdown_bg_close {
     z-index: 10;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -69,7 +72,7 @@
     background-color: rgba(0, 0, 0, 0.347);
   }
   #logo {
-    padding: 0;
+    padding: 0 0 0 10px;
   }
   #navbar_menu {
     display: none;
@@ -85,10 +88,5 @@
     text-align: center;
     font-family: var(--gluten);
     font-size: 2.5rem;
-  }
-}
-
-@keyframes underline-hover {
-  0% {
   }
 }

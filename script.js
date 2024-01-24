@@ -27,3 +27,15 @@ const underlineObjectWidth = underlineObject.offsetWidth;
 const underlineAnimation = underlineObject.nextElementSibling;
 
 underlineAnimation.style.width = `${underlineObjectWidth}px`;
+
+// CLICK LINK FROM NAVBAR
+
+const navbarLink = document.querySelectorAll(".nav_btn");
+
+navbarLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarMenu.classList.remove("active");
+    navbarMenu.style.display = "none";
+    dropdown_bg_close.style.display = "none";
+  });
+});
